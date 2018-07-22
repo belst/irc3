@@ -31,7 +31,7 @@ class Uptime:
         self.fmt = config.get(
             'fmt', '{days} days {hours} hours {minutes} minutes')
         self.privmsg = config.get('privmsg',
-                                  'Up since {0}. Connected since {1}')
+                                  'Up for {0}. Connected for {1}')
 
     def connection_made(self):
         self.connection_uptime = time.time()
